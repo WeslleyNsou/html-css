@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Imagens Flexível</title>
+</head>
+<body>
+    <h1>Imagens Flexível</h1>
+    Você está vendo a imagen completa? Experimente aumentar o tamanho do navegador &#x1F60E
+
+    <picture>
+        <source media="(min-width:1200px)" srcset="imagens/paisagem-g.png">
+        <source media="(min-width:600px )" srcset="imagens/paisagem-m.png">
+        <img src="imagens/paisagem-p.png" alt="">
+    </picture>
+</body>
+</html>
