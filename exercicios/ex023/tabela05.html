@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+    <style>
+        table{
+            width: 400px;
+            height: 200px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td{
+            border: 2px solid black;
+        }
+        .cnome{
+            background-color: lightblue;
+        }
+        .csexo{
+            background-color: lightgreen;
+        }
+        .cidade{
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mauricio</td>
+                <td>M</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Joana</td>
+                <td>F</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Igor</td>
+                <td>M</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>Vilela</td>
+                <td>M</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>Renata</td>
+                <td>F</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Brunilda</td>
+                <td>F</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
