@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>texte de formulario</h1>
+    <form action="Cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" required autocomplete="name" placeholder="nome do aluno" maxlength="30">
+        </p>
+        <p>
+            <label for="imes">Mes:</label>
+            <input type="month" name="mes" id="imes" value="2023-03">
+        </p>
+        <p>
+            <label for="idt">dia:</label>
+            <input type="date" name="date" id="idt">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Linpar">
+        </p>
+    </form>
+    
+</body>
+</html>
