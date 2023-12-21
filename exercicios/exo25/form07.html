@@ -13,7 +13,7 @@
                 <optgroup label="Região Sudeste">
                     <option value="MG">Minas Gerais</option>
                     <option value="SP">São Paulo</option>
-                    <option value="ES">Espirito Santo</option>
+                    <option value="ES" selected>Espirito Santo</option>
                 </optgroup>
                 
                  <optgroup label="Região Sul">
@@ -30,7 +30,15 @@
             </select>
         </div>
         <div>
-            datali
+            <label for="prof">Profição</label>
+            <input type="text" name="prof" id="prof" list="ls">
+            <datalist id="ls">
+                <option value="CONT" selected>Contador</option>
+                <option value="MOTO">Motorista</option>
+                <option value="CONZ">Conzinheiro</option>
+                <option value="RECP">Recepcionista</option>
+            </datalist>
+
         </div>
     </form>
 </body>
