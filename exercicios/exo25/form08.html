@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>output</title>
+</head>
+<body>
+    <h1>Output de formulario</h1>
+
+    <form action="Cadastro.php">
+        <!--Soma de numeros-->
+        <div>
+            <label for="num1">numero 1</label>
+            <input 
+            type="number" name="num1" id="num1" 
+            min="-50" max="50"
+            oninput="soma.innerHTML= Number(num1.value)+Number(num2.value)" 
+            >
+        </div>
+        <div>
+            <label for="num2">numero 2</label>
+            <input 
+            type="number" name="num2" id="num2"
+             min="-50" max="50"
+             oninput="soma.innerHTML= Number(num1.value)+Number(num2.value)"
+             >
+        </div>
+        <div>
+            <label for="soma">Soma</label>
+            <outputv name="soma" id="soma">0</output>
+        </div>
+
+        <!--Numero-->
+        <div>
+            <label for="num">Escolha um numero</label>
+            <input
+            type="range" name="num" id="num"
+            min="0" max="10" value="5"
+            oninput="val.innerHTML= Number(num.value)">
+
+            <output name="val" id="val">
+                5
+            </output>
+        </div>
+
+        <!--Idade soma-->
+        <div>
+            <label for="ano">data de nacimento</label>
+            <input 
+            type="number" name="ano" id="ano"
+            min="1950" max="2024"
+            oninput="Caldade()"
+            >
+        </div>
+        <div>
+            <label for="ida">Sua idade é:</label>
+            <output name="ida" id="ida">
+
+            </output>
+        </div>
+
+        <!--Enviar e limpar-->
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+    <Script>
+        function Caldade() {
+            let atual = new Date().getFullYear()
+            ida.innerHTML = Number(atual)-Number(ano.value)
+        }
+    </Script>
+</body>
+</html>
