@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/*Estilo IMPRESORA*/
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+html, body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1em;
+}
+
+menu {
+    display: none;
+}
+
+main::after {
+    contain: 'Site impreso do site https://github.com/WeslleyNsou';
+}
