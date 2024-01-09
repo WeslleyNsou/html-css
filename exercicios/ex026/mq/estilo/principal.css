@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/*Estilo Principal*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body{
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #233eff;
+}
+
+h1{
+    color: white;
+    text-shadow: 3px 3px 0px #0c1664;
+
+    padding: 10px;
+}
