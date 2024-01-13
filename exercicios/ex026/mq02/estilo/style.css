@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/*Tablet*/
+@media screen and (min-width:768px) and (max-width:992px) {
+    body{
+        background-image: url('../imagens/back-tablet.jpg');
+    }
+    img#ph{display: none;}
+    img#tb{display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+    img#pi{display: none;}
+}
+
+/*Pc*/
+@media screen and (min-width:992px) and (max-width:1200px) {
+    
+    body{
+        background-image: url('../imagens/back-pc.jpg')
+    }
+
+    img#ph{display: none;}
+    img#tb{display: none;}
+    img#pc{display: block;}
+    img#tv{display: none;}
+    img#pi{display: none;}
+}
+
+/*Tv*/
+@media screen and (min-width:1200px) and (max-width:1800px) {
+
+    body{
+        background-image: url('../imagens/back-tv.jpg');
+    }
+    img#ph{display: none;}
+    img#tb{display: none;}
+    img#pc{display: none;}
+    img#tv{display: block;}
+    img#pi{display: none;}
+}
+
+/*Print*/
+@media print{
+
+    main{
+        border: solid black;
+        border-radius: 0px 0px 100px 0px;
+
+        box-shadow: none;
+        width: 90vw;
+        height: 90vh;
+    }
+
+    main h1{
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+        text-shadow: none;
+    }
+    main::after{
+        content: 'Repositorio do gitHub: https://github.com/WeslleyNsou';
+    }
+    
+    img#ph{display: none;}
+    img#tb{display: none;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+    img#pi{display: block;}
+}
