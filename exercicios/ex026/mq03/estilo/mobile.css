@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    background-color: darkgrey;
+}
+
+header{
+    background-color: grey;
+}
+header h1{
+    text-align: center;
+    padding: 20px;
+}
+header ul{
+    list-style-type: none;
+}
+header a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 10px;
+
+    border: 1px solid black;
+    color: white;
+}
+header a:hover{
+    background-color: rgb(228, 228, 228);
+    color: black;
+    font-size: 1.2em;
+}
+
+main{
+    background-color: white;
+    width: 80vw;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+article h2{
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+article p{
+    padding: 10px;
+    text-align: justify;
+    text-indent: 20px;
+}
