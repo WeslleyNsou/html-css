@@ -34,8 +34,22 @@ header a:hover{
     font-size: 1.2em;
 }
 
+span#menu{
+    text-align: center;
+    margin: auto;
+    color: white;
+    background-color: rgb(46, 46, 46);
+    display: block;
+    padding: 10px;
+}
+span#menu:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
 /*Menu responsivo*/
-.menu-icon{
+#iten{
     display: none;
 }
 @media screen and (max-width: 700px) {
